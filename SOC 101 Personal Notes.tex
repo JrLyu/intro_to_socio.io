@@ -1,0 +1,1198 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{ntheorem}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float} 
+\usepackage{subfigure} 
+\usepackage{arydshln}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{chemfig}
+
+\geometry{a4paper, left=2cm, right=2cm, bottom=2cm, top=2cm}
+
+\definecolor{darkblue}{HTML}{003472}
+\definecolor{lightblue}{HTML}{70f3ff}
+\definecolor{red}{HTML}{dc3023}
+\definecolor{lightred}{HTML}{f47983}
+\definecolor{green}{HTML}{057748}
+\definecolor{lightgreen}{HTML}{a4e2c6}
+\definecolor{gray}{HTML}{758a99}
+\definecolor{lightgray}{HTML}{41555d}
+\definecolor{lightblack}{HTML}{424c50}
+\definecolor{orange}{HTML}{9b4400}
+\definecolor{yellow}{HTML}{ffa631}
+\definecolor{white}{HTML}{f0fcff}
+
+\tcbuselibrary{skins, breakable, theorems}
+\newtcolorbox{df}[2][]{
+	colback=lightgray!5, colframe=lightblack,colbacktitle=lightblack, coltitle=white,title={#2},fonttitle=\bfseries,breakable
+}
+
+\newtcolorbox{thm}[2][]{
+	colback=lightblue!5, colframe=darkblue,colbacktitle=darkblue, coltitle=white,title={#2},fonttitle=\bfseries,breakable
+}
+
+\newtcolorbox{eg}[2][]{
+	colback=lightgreen!5, colframe=green,colbacktitle=green, coltitle=white,title={#2},fonttitle=\bfseries,breakable
+}
+
+\newtcolorbox{prf}[2][]{
+	colback=orange!5, colframe=orange,colbacktitle=orange, coltitle=white,title={#2},fonttitle=\bfseries,breakable
+}
+
+\newtcolorbox{ext}[2][]{
+	colback=yellow!5, colframe=yellow,colbacktitle=yellow, coltitle=white,title={#2},fonttitle=\bfseries,breakable
+}
+
+\newtcolorbox{rmk}[2][]{
+	colback=lightred!5, colframe=red,colbacktitle=red, coltitle=white,title={#2},fonttitle=\bfseries,breakable
+}
+
+\lstset{language=Python}
+\lstset{
+	numbers=left,
+	numberstyle=\tiny,
+	keywordstyle=\color{green},
+	commentstyle=\color{lightgray},
+	frame=shadownbox,
+	rulesepcolor=\color{lightblack},
+	escapeinside='',
+	xleftmargin=2em,aboveskip=1em,
+	framexleftmargin=2em
+	}
+
+\title{Emory University\\\textbf{SOC 101 - Introduction to General Sociology \\Lecture Notes}}
+\author{Jiuru Lyu}
+\date{\today}
+
+\rhead{\thepage}
+\linespread{1.15}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{The Sociological Perspective}
+\subsection{What Is Sociology?}
+\subsubsection{How Do We Define Sociology as Discipline?}
+\begin{enumerate}
+	\item Gladwell's "Food Fight":
+	\begin{enumerate}
+		\item Main points and arguments:
+		\begin{itemize}
+			\item Budget allocation $\rightarrow$ tradeoffs
+			\item Food at Bowdoin College is a moral problem
+			\item Financial aid vs. other aspects of spending
+			\item Vassar $\rightarrow$ What's more important?
+		\end{itemize} 
+		\item Things You Didn't know before: Universities do not need to pay taxes.
+		\begin{prf}{Why?}
+			\begin{enumerate}
+				\item Universities are non-profit organizations. \\Some universities buy lots of expensive properties to increase their endorsement, such as NYU. 
+				\item Universities are providing a public good, so they ought to receive some bonus from society. However, they also need to pay back society with high-quality and fair education. $\rightarrow$ \textbf{\color{red}{Privilege leads to responsibilities.}}
+			\end{enumerate}
+		\end{prf} 
+		\item This podcast is NOT sociology. Instead, it provides some sociological perspectives. $\rightarrow$ This podcast is not objection: 
+		\begin{itemize}
+			\item It adds a moral opinion.
+			\item It lacks sufficient evidence: a) it only interviewed one student, and b) it only picks "food" as the topic.
+		\end{itemize}
+	\end{enumerate}
+	\item Sociology as a discipline:
+	\begin{enumerate}
+		\item Definition of Sociology:
+		\begin{df}{Sociology}
+			\textbf{Sociology} is the systematic study and explanations of \\
+			 - {social behavior}, \\
+			 - {social groups}, and \\
+			 - {society}.
+		\end{df}
+		\item Sociology is also interested in following contexts: 
+		\begin{ext}{Sociology Definition - Extended}
+			Sociology is also interested in how \textbf{social forces} influence or shape our \textbf{individual behavior}. 
+		\end{ext}
+	\end{enumerate}
+	\item Sociology and other disciplines: Nature vs. Nurture debate
+	\begin{enumerate}
+		\item In Biology, we use Biology/genes to explain human behavior. 
+		\item In Psychology, we use mental process to explain human behavior. It focuses on explanations WHIHIN individuals. 
+		\item In Sociology, we use social interactions and environment to explain human behavior. It focuses on explanations in the EXTERNAL social realm. 
+	\end{enumerate}
+\end{enumerate}
+
+\subsubsection{Connecting Society and the Individual: Fundamental Theorem of Sociology}
+\begin{enumerate}
+	\item Social context shapes human behavior. \\{\color{green}{Social context = Environment}}
+	\item Individual behavior is deeply shaped (\textit{but not determined}) by social forces (social systems).
+	\item Thinking "sociologically":
+	\begin{enumerate}
+		\item See beyond merely the individual.
+		\item See behind assumptions of everyday life.
+		\item Begin to think about the way society is structured. 
+		\begin{eg}{Example of a Question for Thinking Sociologcially}
+			"How are relationships organized? "\\
+			"How are relationships between professors and students organized? "
+		\end{eg}
+	\end{enumerate}
+	\item A summary of Sociology as a Discipline: 
+	\begin{rmk}{Summary: Sociology as a discipline}
+		\begin{itemize}
+			\item Sociology recognizes the importance of individuals and the importance of biological and psychological factors.
+			\item But, this is NOT ALL that is needed to explain human behavior.
+			\item Social Context (Environment) is an inescapable factor in human life.
+			\item Biology and Environment are inseparable.
+		\end{itemize}
+	\end{rmk}
+\end{enumerate}
+
+\subsubsection{Sociology is a Social Science}
+\begin{enumerate}
+	\item Social science or "common sense?"
+	\begin{enumerate}
+		\item Common sense:
+		\begin{df}{Common Sense}
+			Common science is sound  judgment not based on specialized knowledge. 
+		\end{df}
+		\item Science: 
+		\begin{df}{Science}
+			Science is a \textbf{\underline{system} of knowledge} covering the operation of general laws, obtained and tested through scientific method.
+		\end{df}
+		\item Scientific method: 
+		\begin{df}{Scientific Method}
+			Scientific method refers to \textbf{\underline{systematic}} pursuit of knowledge involving the recognition and formulation of a problem, the collection of \textbf{\underline{data}} through observation and experiment, and the formulation and testing of hypotheses.
+		\end{df}
+		\begin{ext}{Why do we need scientific methods? }
+			We what to make sure that our study and research is replicable. 
+		\end{ext}
+		\item Sociology: 
+		\begin{df}{Sociology - \textit{Refined Definition}}
+			Sociology is the \textbf{\underline{systematic study}}, using the scientific method, to test hypotheses/questions about social institutions, social interactions, and social relationships.  
+		\end{df}
+		\begin{rmk}{Note on the Definition of Sociology}
+			As indicated by the definition, sociology only focus on people as a group; sociology never studies individuals and individual behaviors. 
+		\end{rmk}
+	\end{enumerate}
+	\item Anecdote V.S. Empirical Evidence: 
+	\begin{enumerate}
+		\item Anecdote: 
+		\begin{df}{Anecdote}
+			Anecdote is a usually short narrative of an interesting, amusing, or biographical incident. 
+		\end{df}
+		\item Evidence:
+		\begin{df}{Evidence}
+			Evidence is something that furnishes proof. 
+		\end{df}
+		\item Empirical: 
+		\begin{df}{Empirical}
+			The word "empirical" means "based on observation; capable of being verified or disproved by observation or experiment. "
+		\end{df}
+	\end{enumerate}
+	\item Social science and generalizations: 
+	\begin{enumerate}
+		\item Category: 
+		\begin{df}{Category}
+			Category means to distinguish one thing from another; how we make distinctions between things. 
+		\end{df}
+		\item Generalization: 
+		\begin{df}{Generalization}
+			Generalization means the characteristic of objects within a category; defines similarities and differences with other categories. 
+		\end{df}
+		\item Stereotype: 
+		\begin{df}{Stereotype}
+			Stereotype is an exaggerated description applied to every person in some category. 
+		\end{df}
+		\item The purpose of social science is to develop accurate categorizations and generalizations about humans. 
+		\item Sociology can predict: 
+		\begin{enumerate}
+			\item Which \underline{groups} will be \underline{more likely} to engage in certain types of behavior. 
+			\item But, not which \underline{particular person} in the group will conduct certain types of behavior. - \textit{Sociology only studies humans as a group not human as an individual.}
+			\item Sociology predicts categories (and generalizations about them), but not a precise individual's behavior.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+
+\subsection{How Do We Do Sociology? (Sociological Research Methods)}
+\subsubsection{Sociology Research Model}
+\begin{enumerate}
+	\item Theory V.S. Research: 
+	\begin{enumerate}
+		\item Theory - Definition: 
+		\begin{df}{Theory}
+			\begin{enumerate}
+				\item A systematic \textbf{explanation} for the observed facts that relate to a particular aspect of life. 
+				\item General propositions about the relationship between two or more concepts (variable).
+				$$A\  \xrightarrow[]{\text{ impact }}\ B$$
+			\end{enumerate}
+		\end{df}
+		\item Empirical research: 
+		\begin{enumerate}
+			\item Definition: 
+			\begin{df}{Empirical Research}
+				Using \textbf{systematically gathered data} to prove a theory.
+			\end{df}
+			\item Sociologists conduct research - gather data about real people - to determine if theories are true depictions and predictions of reality. 
+		\end{enumerate}
+		\item Method: 
+		\begin{df}{Method}
+			The way we gather data for empirical research.\\
+			{\color{green}\textit{Note: Your theory and your method must connect to each other. }}
+		\end{df}
+	\end{enumerate}
+	\item The Sociology Research Model: 
+	\begin{enumerate}
+		\item Develop a Research Question: Select topic \& Define problem: 
+		\begin{df}{Research Question (RQ)}
+			The relationship between two or more concepts or variables. \\
+			(How does A affect B? )
+		\end{df}
+		\item Theory: Review theoretical literature: 
+		\begin{enumerate}
+			\item What theories have been used to address this research question in the past?
+			\item Choose specific theory (or theories) you want to test.
+		\end{enumerate}
+		\item Hypothesis: 
+		\begin{df}{Hypothesis}
+			A hypothesis is a statement of what you expect to find based on the theory. A hypothesis predicts a relationship between two or more concepts. 
+		\end{df}
+		\item Empirical test: The heart of a sociological research
+		\begin{enumerate}
+			\item Choose a Method (\textit{will be discussed later})
+			\item Collect the data		
+		\end{enumerate}
+		\item Results: What did I find? 
+		\begin{enumerate}
+			\item Analyze results
+			\item Present your findings - summarizing key points, and illustrating the results with:
+			\begin{itemize}
+				\item How do my findings tie into my hypotheses?
+				\item How do my findings fit with previous research?
+				\item What might be desirable further research?
+			\end{itemize}
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\subsubsection{Different Social Research Method}
+\paragraph{Survey Research}
+\begin{enumerate}
+	\item Survey - Definition
+	\begin{df}{Survey}
+		In survey research, sociologists collect data through asking people questions. They set questions, followed by a list of responses, in a survey. Most data from surveys are \textbf{quantitative} (numeric). 
+	\end{df}
+	\begin{eg}{Example of a Likert Scale}
+		"One a scale of 1 to 5, ..."
+	\end{eg}
+	\item Importance things to consider when setting or conducting a survey research: 
+	\begin{enumerate}
+		\item Types of survey: 
+		\begin{enumerate}
+			\item Self-administered questionnaires (such as via email)
+			\item Phone surveys
+			\item In-person surveys (such as an interview)
+		\end{enumerate}
+		\item Population: 
+		\begin{enumerate}
+			\item Define the group you want to study
+			\item Often dependent on your research questions and past literatures. 
+		\end{enumerate}
+		\item Sampling: 
+		\begin{enumerate}
+			\item How sample chosen is extremely important for results
+			\item Sample should \textbf{represent} the entire Population
+			\item Probability sampling: 
+			\begin{df}{Probability Sampling}
+				In simplest form, each person in the population has an equal chance of being chosen for the study. 
+			\end{df}
+		\end{enumerate}
+		\item Question wording: 
+		\begin{enumerate}
+			\item Form, wording, and context of questions are important for accurate results.
+			\item Complex issues need multiple questions. 
+		\end{enumerate}
+	\end{enumerate}
+	\item Advantages and Disadvantages of Survey Research: 
+	\begin{enumerate}
+		\item Pros: 
+		\begin{enumerate}
+			\item Best way of learning about large populations.
+			\item Data can be representative of the large population (with good sampling and response rate)
+			\item Standardization of data
+			\item Economy - cost
+			\item Time
+		\end{enumerate}
+		\item Cons: 
+		\begin{enumerate}
+			\item Poorly worded questions yield poor data.
+			\item Questions can be somewhat artificial (or superficial).
+			\item Data can be potentially superficial.
+			\item Difficult to gain a full sense of social processes in their natural settings. 
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\paragraph{Qualitative Research (Field Research)}
+\begin{enumerate}
+	\item Definition: 
+	\begin{df}{Qualitative Research}
+		Systematic, often long-term (around 1 to 10 years), observation of social phenomena in natural settings.
+	\end{df}
+	\item Most often, we use qualitative research for \underline{topics that are complex} and not easy to assess using surveys. 
+	\item Data are qualitative - \textbf{Non-numerical}
+	\begin{enumerate}
+		\item Data collected in text form (not numerical scales)
+		\item The text from notes and interviews are \textbf{coded} and organized around themes.
+		\item Then they are systematically analyzed for patterns
+		\item Summaries are usually non-numerical (although one may count how many people mentioned particular themes).
+	\end{enumerate}
+	\item Observation as a type of Qualitative Research: 
+	\begin{enumerate}
+		\item Definition: 
+		\begin{df}{Observation}
+			Observe a group of people or a certain event.
+		\end{df}
+		\item Data are collected through: 
+		\begin{enumerate}
+			\item Field journal
+			\item interviews
+			\begin{ext}{Different Types of Questions Asked}
+				Interviews use open-ended questions, whereas surveys ask close-ended questions.
+			\end{ext}
+		\end{enumerate}
+		\item Types of Observation: 
+		\begin{enumerate}
+			\item Direct observation: 
+			\begin{enumerate}
+				\item Researcher observes a social group as an \textbf{outsider}.
+				\item Does not become part of the group in any way.
+				\item Usually no influence on group dynamics.
+			\end{enumerate}
+			\item Participant Observation
+			\begin{enumerate}
+				\item Researcher goes beyond mere observation to participate in the group they are studying. 
+				\item Potential for influencing the group.
+			\end{enumerate}
+		\end{enumerate}
+	\end{enumerate}
+	\item In-Depth Interviews as a type of Qualitative Research: 
+	\begin{enumerate}
+		\item Usually a part of observation studies. 
+		\item Can also be done as a separate method.
+		\item Explore a topic at a more complex level. 
+		\item Use when you want \textbf{depth} and \textbf{diversity} of views. 
+		\item Interviewer has very general questions and has the respondent talk at length. 
+		\item Potential for interviewer bias. 
+	\end{enumerate}
+	\item Advantages of Qualitative Research: 
+	\begin{enumerate}
+		\item Able to study nuances of attitudes and behaviors.
+		\item Able to study whole group - defining social structure of group.
+		\item More \textbf{depth} and better understanding of what is studied.
+		\item Can be inexpensive. 
+	\end{enumerate}
+	\item Disadvantages of Qualitative Research: 
+	\begin{enumerate}
+		\item Time-intensive
+		\item Potential for subjectivity and bias.
+		\item Conclusions are regarded as \textbf{suggestive} rather than \textbf{definitive}.
+		\item Smaller sample - \textit{less generalizability} to larger populations.
+	\end{enumerate}
+\end{enumerate}
+
+\paragraph{Experiment}
+\begin{enumerate}
+	\item This is the most rigorous controllable of the methods. 
+	\item You define a situation you want to test and then create that situation in a lab. 
+	\begin{df}{Groups in Experiments}
+		\textbf{Experimental group}: exposed to test factor.\\
+		\textbf{Control group}: identical in terms of types of individuals, but not exposed to test factor. 
+	\end{df}
+	\item Advantages of Experiments: 
+	\begin{enumerate}
+		\item Control over variables. 
+		\item Can test specific influences over a specific situation.
+	\end{enumerate}
+	\item Disadvantages of Experiments: 
+	\begin{enumerate}
+		\item Artificial environment: how do you know lab settings will be the same as in real life? 
+		\item Limited in scope
+		\item Ethical concerns - Moral concerns of human subject experiments \textit{(This has been addressed, by and large, through Institutional Review Boards (IRBs))}
+	\end{enumerate}
+	\begin{eg}{Milgram's Experiment}
+		\begin{enumerate}
+			\item Introduction
+			\begin{enumerate}
+				\item Psychological experiment in early 1960s. 
+				\item Conducted variations with different groups/samples. 
+				\item Slightly different from most experiments today - no control group. 
+			\end{enumerate}
+			\item Purpose: 
+			\begin{enumerate}
+				\item Involved observing people's willingness to harm others when following orders. 
+				\item Wanted to see threshold for when people would take personal responsibility and disobey superior. 
+			\end{enumerate}
+			\item Why do people obey authority figures? 
+			\begin{enumerate}
+				\item Assume their authority figures. 
+				\item Fear reprimand/anticipate reward.
+				\item Pass responsibility on to someone else ("just following orders")
+				\item etc. (look at social context for answers...)
+			\end{enumerate}
+			\item Effect on participants: 
+			\begin{enumerate}
+				\item Through a later survey, 83\% said they were glad they had participated. 
+				\item Yet, many personally experienced problems during the experiment. 
+				\item Some felt shame; others justified their behavior. 
+			\end{enumerate}
+			\item Critiques of method: 
+			\begin{enumerate}
+				\item Its psychological effects on the participants. 
+				\item Deception of the participants. 
+			\end{enumerate}
+		\end{enumerate}
+	\end{eg}
+\end{enumerate}
+
+\subsubsection{Ethics in Research}
+\begin{enumerate}
+	\item These studies like Milgram's experiment has led to 
+	\begin{enumerate}
+		\item Codes of ethics to protect human subjects
+		\item Institutional Review Boards
+	\end{enumerate}
+	\item A note on peer review
+\end{enumerate}
+
+\subsubsection{Causation vs. Correlation}
+\begin{enumerate}
+	\item Definitions: 
+	\begin{df}{Causation and Correlation}
+		\textbf{Correlation}: A relationship between two variables.\\
+		\textbf{Causation}: One variable causes another. 
+	\end{df}
+	\item Element of time - which came first
+	\item Intervening - or third - variable
+\end{enumerate}
+\begin{eg}{Case Study: \textit{Bad Feminist} by Roxane Gay}
+	\begin{enumerate}
+		\item Why read this article (as it is not sociological research)? 
+		\begin{enumerate}
+			\item Gay emphasizes the importance of cultural awareness and developing cross-cultural knowledge and skills. 
+			\item She wants us to pay attention - critically and carefully - to the world around us. 
+			\item She also articulates the importance of grace - wherein people are allowed to make mistakes, learn, and evolve. 
+			\item It is an educational approach to life. 
+			\item it is not an approach wherein we imagine we know everything already and attack other who "don't get it."
+			\item To a certain degree, she is also exploring "imperfection."
+		\end{enumerate}
+		\item What is this essay about? 
+		\begin{enumerate}
+			\item Gay confronts the reductive nature of feminism and the stereotypes it produces. 
+			\item She also addresses her own reservations towards embracing feminism itself. 
+			\item One thing not in the essay (but she does take up elsewhere) is that \underline{feminism is also a social movement}. 
+		\end{enumerate}
+		\item Exercise: 
+		\begin{enumerate}
+			\item She points to Judith Butler to articulate the ways in which we all "perform" our gender. 
+			\item Judith Butler: American Philosopher and gender theorist.
+			\item Is there a "right" way to be a woman? Or a "right" way to be a man? 
+		\end{enumerate}
+		\item What is sociological about feminism? 
+		\begin{enumerate}
+			\item Sociology often explores the unequal distribution of power and resources, feminist sociology studies power in its relation to gender. 
+			\item Feminist scholars study a range of topics, including sexual orientation, race, economic status, and nationality. 
+			\item At the core of feminist sociology is the idea that, in most societies, women have been systematically oppressed and that \textbf{men have been historically dominant}. (This is referred to as \textbf{patriarchy}.)
+			\item All of these categories - including 'feminist' - are being controlled by stereotypes and judgments. 
+		\end{enumerate}
+		\item Gay on Categories: 
+		\begin{enumerate}
+			\item "We are categorized and labeled from the moment we come into this world by gender, race, size, hair color, eye color, and so forth."
+			\item "Again, we see this fear of categorization, this fear of being forced into a box that cannot quite accommodate a woman properly." [and, a man ... and other gender categories ...]
+		\end{enumerate}
+		\item \textit{\textbf{Gay's critique of many white feminists }}
+		\begin{enumerate}
+			\item Not interested in the issues unique to women of color - having to work against a different set of stereotypes ("angry black woman', etc.); are oftentimes dismissive. 
+			\item Worried that a recognition of differences among feminists will lead to divisiveness.
+			\item Their argument that black women need to do the work of making feminist organizations more inclusive.
+			\item Appropriation of material (ideas, etc.)
+			\item Gay notes that there are problems with feminism - it is not perfect: There are problems with all social movements, and as they expand, they are often characterized by divisiveness. 
+		\end{enumerate}
+	\end{enumerate}
+\end{eg}
+
+\subsection{Basic Sociological Concepts - Social Structure: Statuses, Roles, and Norms}
+\subsubsection{How Do We Understand Social Context?}
+\begin{enumerate}
+	\item Social order: 
+	\begin{enumerate}
+		\item Why does social context matter? Because it provides \textbf{order} in our world. 
+		\item Sociologists often study the processes that enable social order; the formal and informal rules that allow society to function.
+		\item Social order is created and maintained through: 
+		\begin{enumerate}
+			\item Laws and formal rules
+			\item Informal social processes/factors
+		\end{enumerate}
+	\end{enumerate}
+	\item Social context defined: 
+	\begin{enumerate}
+		\item Definition: 
+		\begin{df}{Social Context (Social Environment)}
+			External reality formed by interactions between individuals.
+		\end{df}
+		\item Notes on the definition: 
+		\begin{enumerate}
+			\item Can range from \textbf{micro (family)} to \textbf{macro (nation)}. 
+			\item Individuals live in multiple contexts at the same time (e.g., family, religious group, city, nation). 
+			\item Individuals experience the \textbf{primacy} of one context over others at particular times. 
+		\end{enumerate}
+		\item Sociologists seek to uncover, understand, and explain different social contexts, as well as their influence over individual behavior. 
+	\end{enumerate}
+	\item Social Structure and Culture: 
+	\begin{enumerate}
+		\item They way sociologists study social context is by analyzing two major aspects of it: 
+		\begin{enumerate}
+			\item Social structure
+			\item Culture
+		\end{enumerate}
+		\item Social Structure: 
+		\begin{df}{Social Structure}
+			The predictable rules or patterns of interaction between people and groups.
+		\end{df}
+		\begin{enumerate}
+			\item How relations among people are structured.
+			\item How parts of society are related. 
+		\end{enumerate}
+		\item Culture: 
+		\begin{df}{Culture}
+			What the structures/interactions mean.
+		\end{df}
+		\begin{enumerate}
+			\item Shared system of meaning that exists in any society/social context.
+			\item Shared way of life - shared way of doing things/practices that undergird structure. 
+		\end{enumerate}
+		\item Social Structure and culture enable social order $\rightarrow$ allows us to know how to behave. 
+		\item Social Structure and culture co-exist in social contexts. 
+	\end{enumerate}
+\end{enumerate}
+
+\subsubsection{Social Structure: Status and Role}
+\begin{enumerate}
+	\item Status
+	\begin{enumerate}
+		\item Definition: 
+		\begin{df}{Status}
+			Social \textbf{positions} people occupy. \\
+			Any social position that has rights, obligations, and expectations that go along with that position. 
+		\end{df}
+		\item Ascribed status: 
+		\begin{df}{Ascribed Status}
+			A position \textbf{given} at birth or assigned at different stages of life. 
+		\end{df}
+		\item Achieved status: 
+		\begin{df}{Achieved Status}
+			A position \textbf{acquired} through personal effort. 
+		\end{df}
+		\item Status-set: combination of various statuses. It is the sum of positions that we occupy in society. 
+		\item Master status: when one status assumes a certain priority and appears to override other statuses that you hold. 
+	\end{enumerate}
+	\item Role
+	\begin{enumerate}
+		\item Definition: 
+		\begin{df}{Role}
+			The \textbf{expressions and behavior} of a person who occupies a particular status. 
+		\end{df}
+		\item Roles involve expressions and behaviors that are appropriate to the status. 
+		\item Roles define our interactions with occupants of other statuses. 
+		\item Roles involve not just actions, but also expressions of feeling and emotion. 
+		\item Statuses vs. Roles
+	\end{enumerate}
+	\item Status and Role in Interaction: Goffman
+	\begin{enumerate}
+		\item Goffman: People in their everyday interactions are like \textbf{actors performing on a stage}
+		\item Social interaction = theatrical performance\\
+		\textbf{Status} = Character in a play\\
+		\textbf{Role} = Script; the dialogue and action of the character. 
+		\begin{eg}{Our "performance" includes}
+			\begin{enumerate}
+				\item The way we dress (costume)
+				\item The objects we carry (props)
+				\item Our tone of voice and gestures (manner)
+				\item Performances vary according to where we are (context/set)
+			\end{enumerate}
+		\end{eg}
+		\item \textbf{"\textit{Presentation of Self}" = each individuals' performance.}
+		\begin{enumerate}
+			\item Individuals can influence the performance.
+			\item As we present ourselves in everyday situations, we reveal information to others.
+			\item We try to create specific impressions about ourselves. 
+			\item This is also called "\textbf{impression management}"
+			\item It has several distinct elements: 
+			\begin{enumerate}
+				\item \textbf{Defining} the situation (set) a certain way
+				\item \textbf{Presenting} a certain \textbf{status}
+				\item \textbf{Managing} how we \textbf{play our role}
+				\item \textbf{Working consensus} - overall agreement on definition of the situation. 
+			\end{enumerate}
+		\end{enumerate}
+		\item Stage 1 - "Definition of the Situation":  This is like the stage/set
+		\begin{enumerate}
+			\item We know something about the play simply by seeing the set or setting. 
+			\item We "define" interactions with other people based on information we initially perceive about the setting: 
+			\begin{enumerate}
+				\item Physical surroundings
+				\item Props
+			\end{enumerate}
+			\item We also "define" the situation based on people's \textbf{statuses}.
+			\item When we interact, we are constantly searching for \textbf{cues to their statuses}. 
+		\end{enumerate}
+		\item Stage 2 - "Presentation of Self": Here is where the play begins: the action or interaction begins
+		\begin{enumerate}
+			\item \textbf{We play the role connected to our status} (or the status we would like to have):
+			\begin{enumerate}
+				\item The techniques that people use to get others to see them in a certain light. 
+				\item How we give information to others that we interact with - express ourselves.
+				\item Expressiveness of the individual: \\
+					Expressions \textbf{given} = verbal communication\\
+					Expressions \textbf{given off} = non-verbal communication - gestures; facial expressions
+			\end{enumerate}
+		\end{enumerate}
+		\item Stage 3 - "Managing the Situation": Here, individuals can "manage" aspects of the performance in order to get people to see them a certain way - Going beyond the mere script (role)
+		\begin{enumerate}
+			\item Individual who is presenting self can manage the situation to some extent
+			\item To control conduct of others, especially their treatment of you. $\rightarrow$ \textbf{Must get others to define the situation the way you do}. 
+			\item Can do this by managing your expressions.
+		\end{enumerate}
+		\item Stage 4 - "Working Consensus": 
+		\begin{enumerate}
+			\item For interactions to be successful, people must agree about the definition of the situation. 
+			\item Must agree on statuses and roles for particular context. 
+			\item Definition: 
+			\begin{df}{Working Consensus}
+				Together the participants contribute to a single overall-definition of the situation, which involves: 
+				\begin{enumerate}
+					\item Not so much real agreement as to what exists.
+					\item But rather real agreement as to whose "definition" will be honored in that situation. 
+				\end{enumerate}
+			\end{df}
+		\end{enumerate}
+		\item Summary of Goffman: 
+		\begin{rmk}{Summary of Goffman - Interaction is like play}
+			We can present ourselves in a certain way, manage impressions of ourselves, and define situation:
+			\begin{enumerate}
+				\item Because of our shared understanding of statuses. 
+				\item Because those statuses have roles and expectations attached to them.
+				\item And expectations associated with roles are norms. 
+			\end{enumerate}
+		\end{rmk}
+	\end{enumerate}
+\end{enumerate}
+
+
+\subsubsection{Social Structure: Norms and Social Control}
+\begin{enumerate}
+	\item Norms: 
+	\begin{enumerate}
+		\item Definition: 
+		\begin{df}{Norms}
+			The shared \textbf{rules and expectations} that govern our behavior.
+		\end{df}
+		\begin{enumerate}
+			\item Norms vary depending on context or situation.
+			\item Norms are most often tied to \textbf{statuses}, and govern \textbf{roles}.
+			$$\text{Status}\ \longrightarrow\ \text{Role}\ \longrightarrow\ \text{Norms}$$
+		\end{enumerate}
+		\item Norms inform us how we are to act, toward whom, where, and when. 
+		\item And, not only how we are to act, but to anticipate in others. 
+	\end{enumerate}
+	\item Social Control: 
+	\begin{enumerate}
+		\item Norms make our interactions orderly and predictable. 
+		\item Thus, society has mechanisms to ensure that people conform to norms. 
+		\item Definition: 
+		\begin{df}{Social Control}
+			The ways that society (people or institutions) attempts to keep people in line with social norms. 
+		\end{df}
+		\item Types of social control: 
+		\begin{df}{Positive sanction}
+			Rewards for approved behavior. 
+		\end{df}
+		\begin{df}{Negative sanction}
+			Punishment for disapproved behaviors.
+		\end{df}
+		\item Mechanisms of social control: 
+		\begin{enumerate}
+			\item Vary in severity
+			\item Vary informality
+		\end{enumerate}
+	\end{enumerate}
+	\item Further characteristics of norms: 
+	\begin{enumerate}
+		\item Norms are comprehensive
+		\begin{enumerate}
+			\item Norms shape all our behavior.
+			\item Even our perceptions - how we perceive things have predictable patterns. 
+		\end{enumerate}
+		\item Norms vary in intensity: Norms vary in the intensity of their moral significance.  
+		\begin{enumerate}
+			\item "Mores": Norms that have great moral significance; very important to a society. 
+			\item "Folkways": Norms for routine or casual interaction in a society. 
+		\end{enumerate}
+		\item Limits to Norms: 
+		\begin{enumerate}
+			\item Norms can be manipulated: 
+			\begin{enumerate}
+				\item As Goffman shows, we can regulate our "presentation of self" in society. 
+				\item We can also engage in "role distance"
+				\item Show we aren't really occupier of a particular status. 
+			\end{enumerate}
+			\item Norms are not always clearly defined. 
+			\begin{enumerate}
+				\item Case of unclear script
+				\item Very often with new statuses in society
+			\end{enumerate}
+			\item Status conflict: \\
+			In some cases, roles are incompatible because statuses are in conflit. 
+	\end{enumerate}
+	\item Norms in Interaction: Goffman
+	\begin{eg}{Example: Cahill's article on "Front Stage/Back Stage" of bathrooms}
+	\begin{enumerate}
+		\item Front stage is public place where we expect to "perform".
+		\item Back stage is area where we get ready for our front stage performances. 
+		\item Different "norms" govern these spaces. 
+		\item Questions to consider: 
+		\begin{enumerate}
+			\item What is the purpose of the public bathroom?
+			\item What are the two performance regions and how are they regarded? 
+			\item How do people interact in public bathrooms - what are the bathroom "interpersonal rituals"?
+			\item What are the norms that govern interaction in this particular social context, with its distinct performance regions? 
+			\item Why do we have these norms? 
+			\item What is a secondary purpose of the public bathroom? 
+		\end{enumerate}
+		\item In summary, why do we do certain things in a bathroom? \\
+		The norms in this private yet public setting: 
+			\begin{enumerate}
+				\item Show that we are loyal to the "behavioral guidelines" of our society (norms/values about privacy and bodily functions)
+				\item Contribute to social order
+			\end{enumerate}
+		\end{enumerate}
+		\end{eg}
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Basic Sociological Concepts - Culture}
+\subsubsection{Understanding Culture}
+\begin{enumerate}
+	\item Working definitions: 
+	\begin{df}{Culture}
+		\textbf{Shared system of meaning}: what social structures/interactions mean. 
+	\end{df}
+	\begin{enumerate}
+		\item Shared system of meaning that exists in any society; undergirds social structure. 
+		\item The way we make distinctions between good and bad; important or not. 
+		\item Classifications; distinctions; values. 
+	\end{enumerate}
+	\item Links between culture and social structure. 
+	\begin{enumerate}
+		\item Social structure are culture that are intertwined, but they focus on different aspects of a social life: 
+		$$\text{(Social Structure)}\qquad\qquad\qquad\text{Statuses}\ \longrightarrow\ \text{(Roles)}\ \longrightarrow\ \text{Norms}$$
+		$$\text{(Culture)}\qquad\qquad\qquad\qquad\text{prestige}\ \longleftrightarrow\ \text{Values} $$
+		\item Values: Values often accompany \textbf{norms}
+		\begin{enumerate}
+			\item They justify norms and \textbf{provide believable reasons as to why we should conform}.
+			\item Values define what is worthwhile or important. 
+			\item They are shared believes of what is good or normal. 
+		\end{enumerate}
+		\item Prestige: Prestige often accompanies \textbf{status}\\
+		Based on values, prestige concerns \textbf{specific activities} or statuses that \textbf{the group defines as important and good}. 
+	\end{enumerate}
+	\item Different levels of culture: 
+	\begin{enumerate}
+		\item Explicit: 
+		\begin{enumerate}
+			\item Culture operates in an explicit fashion.
+			\item Areas that explicitly/obviously deal with meaning.
+			\item Material culture
+			\item Values/Beliefs: 
+			\begin{itemize}
+				\item Beliefs that people share regarding what is good, beautiful. 
+				\item Values define what is worthwhile, important. 
+			\end{itemize}
+		\end{enumerate}
+		\item Implicit: 
+		\begin{enumerate}
+			\item It also operates in an implicit fashion. 
+			\item Parts of life that have meaning, but that we "take-or-granted"
+			\item Sometimes, we hold values and beliefs that are implicit: we do NOT recognize them as values/cultures. 
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\subsubsection{Culture shock and Ethnocentrism}
+\begin{enumerate}
+	\item Ethnocentrism
+	\begin{df}{Ethnocentrism}
+		Tendency to regard our way of life as the \textbf{right} way. 
+	\end{df}
+	\item Cultural relativity: 
+	\begin{enumerate}
+		\item Stance taken by social scientists (opposite of ethnocentrism)
+		\item Different societies create different values and different systems of meaning. 
+		\item Difference does not equal "right" or "wrong"
+	\end{enumerate}
+	\item Culture Shock: 
+	\begin{df}{Culture Shock}
+		A feeling of confusion, doubt, or nervousness (or disorientation) caused by being in a place (such as a foreign country) that is different from what people are used to.
+	\end{df}
+	\item Example: Nacirema
+\end{enumerate}
+ 
+\subsubsection{Social Construction of Reality}
+Our world is "socially constructed"
+\begin{enumerate}
+	\item "Construction" aspect: 
+	\begin{enumerate}
+		\item Nothing contains meaning in-and-of-itself
+		\item Humans "construct" or create meaning; including categories/distinctions that are important (e.g. gender/race)
+	\end{enumerate}	
+	\item "Social aspect: 
+	\begin{enumerate}
+		\item Humans create meaning together. 
+		\item Meaning is created through social interaction/social processes.
+		\item People decide together on meanings to assign categories/distinctions, events, objects. 
+	\end{enumerate}
+	\item Example: How to Become a Batman Podcast
+	\begin{eg}{ }
+		How is blindness a "social construction"?
+		\begin{enumerate}
+			\item our expectations of blind people from one another (The social world)
+			\item What does the meaning of blindness? Can blind people "see"? Or does a blind people need help from non-blind people?
+			\item The meaning we give to "blindness" effects both the blind and the non-blind. It impacts our interactions. 
+			\item In fact, the non-blind constrain the behaviors of the blind as a consequence. 
+			\item We change our expectations of human beings because of meanings we "take-for-granted".
+			\item Meaning - what something means - can change our behavior.  
+		\end{enumerate}
+		Questions to think about: 
+		\begin{enumerate}
+			\item Where did your thoughts/beliefs about blind people come from?
+			\item How do you, personally, respond when you see someone who might be blind?  Why do you respond the way you do?
+			\item Daniel and Adam got “lumped together” in their school.  People would mix them up, thinking one was the other.  
+			\item Has this ever happened to you?  Why were you “lumped together” with someone else? How did you respond?  Why do you think you responded the way you did?
+			\item Do you live in a world that believes you can’t do certain things? (Think of the man who worked in a paint factory)
+			\item What would happen if we changed our expectations of what blind people can do?  Do you think we should?
+			\item Have you ever been the subject of someone else’s lower expectations of you?  How did you respond?
+		\end{enumerate}
+	\end{eg}
+	\item Example: The 7 Day Week
+	\begin{eg}{ }
+		\begin{enumerate}
+			\item Reality of the 7-Day Week: 
+			\begin{enumerate}
+				\item The week is ubiquitous, but taken-for-granted 	$\rightarrow$ Implicit culture
+				\item The week gives us a "temporal map" to organize our lives
+			\end{enumerate}
+			\item The week is a social construction of reality: 
+			\begin{enumerate}
+				\item It does not correspond to any naturally occurring phenomenon.
+				\item It is made by people, together (part of culture): 
+				\begin{enumerate}
+					\item Origins of the 7-day week: 
+					\begin{itemize}
+						\item Judaism
+						\item Astrology	
+					\end{itemize}
+					\item Attempts to change the 7-day week: Soviet Union\\
+					These attempts did not work: Because culture was so embedded in people's lives that it seemed "inevitable."
+				\end{enumerate}
+			\end{enumerate}
+		\end{enumerate}
+	\end{eg}
+	\item Social Construction of Reality
+	\begin{enumerate}
+		\item Our world is "socially constructed."
+		\item People create meaning together. 
+		\item Because meaning are created by people, \textbf{people can change them}. (This usually only happens in extraordinary circumstances.)
+	\end{enumerate}
+	\item Meaning, Behavior, and Norms
+	\begin{enumerate}
+		\item New meanings (new social construction of reality) will produce new behaviors.
+		\item All groups must have norms or rules that govern these new behaviors.
+		\item Without norms or rules (without structure), people do not know how to relate to each other, and we have chaos. 	
+	\end{enumerate}
+	\item Example: Henslin, Survivors of F-227
+	\begin{eg}{How is the "social construction of reality" illustrated with the crash survivors in the Andes? }
+		\begin{enumerate}
+			\item Social Construction of Reality
+			\begin{itemize}
+				\item What \underline{deeply held \textbf{cultural meaning}} is at the heart of this situation? 
+				\item How do their normal circumstances change - \underline{what is their \textbf{new social context}}? \\
+					Why does this new social context challenge their deeply held values? 
+				\item How does \underline{cultural meaning change because of new social context}?
+			\end{itemize}
+			\item Meaning, Behavior, and Norms
+			\begin{itemize}
+				\item After meaning changes, \underline{how does group behavior change}?
+				\item \underline{How do norms develop} to guide this new behavior? 
+				\item What norms did the group put into place? 
+			\end{itemize}
+		\end{enumerate}	
+	\end{eg}
+
+\end{enumerate}
+
+
+\subsection{The Case of Love: Culture, Social Structures, and Sentiment}
+We look at how social factors shape two aspects of romantic love in the US: Love and Marriage \& Sex without Love
+\subsubsection{Who do you love?}
+\begin{enumerate}
+	\item Isn't it very individual and personal? 
+	\begin{enumerate}
+		\item All societies have \textbf{distinct social patterns} associated with love.
+		\item Our practices and beliefs about love are \textbf{socially constructed}.
+	\end{enumerate}
+	\item The Social Construction of Love
+	\begin{enumerate}
+		\item Eva Illouz's \textit{Consuming the Romantic Utopia}
+		\begin{enumerate}
+			\item Helps illustrate the \textbf{social construction} of courtship/dating.
+			\item The changing space of courtship.
+			\begin{itemize}
+				\item Moved from the private sphere to the public sphere
+				\item Dating involves negotiating public spaces; knowing how to conduct oneself: Manners, culturally constrained behaviors
+				\begin{eg}
+					Country club, proper attire, adhering to the social norms of a particular group or subculture. 
+				\end{eg}
+				\item The economization of social relationships: now \textbf{consumption} played a huge role in dating: How much money do we spend? Where do we spend it? 
+			\end{itemize}
+		\end{enumerate}
+		\item Viviana Zelizer's \textit{The Purchase of Intimacy}
+		\begin{enumerate}
+			\item Love is also a system that has its equivalence in goods, services, and entitlements. 
+			\begin{eg}{How do you know when you're on a date?}
+				\begin{enumerate}
+					\item What was the meaning of the consumption we now saw in dating? 
+					\item What constitutes a gift and what constitutes payment? How do you know? 
+				\end{enumerate}
+			\end{eg}
+			\item We have cultural templates that allow us to understand: 
+			\begin{itemize}
+				\item the intimacy level between two people
+				\item the behavioral boundaries of a relationship
+				\item the economic boundaries of a relationship between two people 
+			\end{itemize}
+			\item These boundaries are regulated by institutions, emotions, time, and the law. 
+		\end{enumerate}
+	\end{enumerate}
+	\item Social Factors and Mate Selection: Choice of mate is linked to social structure
+	\begin{enumerate}
+		\item Patterns of mate selection: 
+		\begin{enumerate}
+			\item Definitions: 
+			\begin{df}{Endogamy}
+				Endogamy refers to marriage within a social group	
+			\end{df}
+			\begin{df}{Exogamy}
+				Exogamy refers to marriage outside a social group	
+			\end{df}
+			\item Definition: 
+			\begin{df}{Social Stratification}
+				A group's system of ranking.\\ 
+				\textit{Note: Society's ranking of different statuses (large groups of people) according to a hierarchy, often based on prestige/values.}
+			\end{df}
+		\end{enumerate} 
+		\item The US patterns: 
+		\begin{enumerate}
+			\item Social class: Most people marry within their own social class.
+			\item Education: People marry others with similar education.
+			\item Age: Usually, 2-3 years difference. Societies also define the right age to get married. 
+			\item Religion: Most marry within the same religious group, but less endogamous than other categories. 
+			\item Race: This is one of the most endogamous categories, but the proportion varies by race. 
+		\end{enumerate}
+		\item Explanations for endogamous patterns: 
+		\begin{enumerate}
+			\item Preferences play a role: 
+			\begin{itemize}
+				\item Individuals have preference for certain characteristics in a spouse.
+				\item Our preferences are shaped by our social groups and statuses
+			\end{itemize}
+			\item Indirect regulation of mate selection
+			\begin{itemize}
+				\item "Formally Free" mate selection, but \textbf{indirect regulation} through \textbf{restriction of social interaction}
+				\begin{enumerate}
+					\item Influence of third parties (parents)
+					\item Propinquity (proximity: e.g., residential segregation; school; workplace)
+					\item Sanctions (e.g., religious)
+				\end{enumerate}
+				\item Those indirect regulations are ways to assure you "marry the right person."
+			\end{itemize}
+			\item Regulation of mate selection ensures social control 
+			\begin{itemize}
+				\item Without controls over mate selection - would have social chaos
+				\item Different interpretations of social control over love. 
+				\begin{eg}{William Goode's \textit{The Theoretical Importance of Love}}
+					\begin{enumerate}
+						\item Free love threatens class system
+						\item Marriage between different class groups would disrupt social status of group
+						\item Mate selection is most important for those with power and property. So, they place more restrictions on children and their social interactions.
+						\item These mate selections patters serve to reinforce ad reproduce your \textbf{position in social structure}.
+					\end{enumerate}
+				\end{eg}
+			\end{itemize}
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\subsubsection{What is Love? Definitions and meaning of Love}
+\begin{enumerate}
+	\item Love and Marriage
+	\begin{eg}{Swidler: Talk of Love \textit{(The link between love and marriage and how we use culture to socially construct those concepts)}}
+		\begin{enumerate}
+			\item Background of book (Introduction)
+			\begin{enumerate}
+				\item Interviewed 88 middle-class men and women from suburban areas San Jose, CA.
+				\item Not typical, but "Proto-typical" Americans
+				\item "Middle-class" culture tends to be the dominant culture in our country - or "mainstream" culture
+				\item Most of the participants were in their 30's and 40's and were or had been married. 
+			\end{enumerate}	
+			\item Culture nations of love: what is the cultural meaning of "romantic love" in the US? Two different views of love emerge in respondents' interviews. 
+			\begin{enumerate}
+				\item Love Myths - Mythic Love
+				\begin{enumerate}
+					\item Historical origins: Courtly Love Tradition
+					\item Bourgeois tradition reshapes courtly love
+					\begin{itemize}
+						\item A decisive choice (love at first sight)
+						\item A unique other (one true love)
+						\item Overcoming obstacles (marrying for love, not money)
+						\item Love lasts forever ("happily ever after")	
+					\end{itemize}
+				\end{enumerate}
+				\item Real Love - Prosaic Realism
+				\begin{enumerate}
+					\item Participants often de-bunk the notion of mythic love.
+					\item Offer an alternative cultural view of "real love": 
+					\begin{itemize}
+						\item Love grows slowly; is often ambivalent and confused
+						\item One can love many people in a variety of ways
+						\item Love should be based on compatibility and practical traits that make good partners.
+						\item Love does not necessarily last forever. 
+					\end{itemize}
+					\item Love involves emotional sharing, communication, often equality, respect.
+					\item Working at the relationship day-to-day
+				\end{enumerate}
+				\item People talk about both these views of love when talking about what love means to them
+			\end{enumerate}
+		\end{enumerate}
+	\end{eg}
+	\item Sex without Love
+	\begin{enumerate}
+		\item US in the 19th and 20th century \\
+		Sex = Love (form Judeo-Christian culture)
+		\begin{enumerate}
+			\item Norm: Sex is part of committed loving relationship
+			\item Values: Sex is sacred part of love relationship between monogamous couple
+			\item So, sex without love is deviant
+			\item In 1950's, Kinsey survey showed that more people engaged in casual sex than was expected.
+			\item More recent patterns of sexual behavior
+			\item Still, the US norm is against sex without loving commitment. 
+		\end{enumerate}
+		\item 21st century
+		\begin{eg}{Case Study: Lambert et. al. \textit{Pluralistic Ignorance and Hooking UP}}
+			\begin{enumerate}
+				\item Background
+				\begin{itemize}
+					\item In the post, research has assumed that sex without love is a problem (goes against norms). 
+					\item Today, on college campuses, this kind of behavior ("hooking up") has become normative.
+					\begin{df}{Hooking up}
+						Hooking up occurs when two people who are casual acquaintances engage in some forms of sexual behavior with the expectation of no future commitment. 	
+					\end{df}
+				\end{itemize}
+				\item Background studies on "hooking up"
+				\begin{itemize}
+					\item Prevalence: What is the prevalence of hooking up? 
+					\item Bad experiences: What "bad experiences" do students describe? Gender differences in bad experiences? 	
+				\end{itemize}
+				\item Theory: Pluralistic Ignorance
+				\begin{itemize}
+					\item Perceptions of other's attitudes: Group members believe that \textbf{others} in their group (especially leaders or popular people) \textbf{endorse a particular norm}). 
+					\item Own attitudes: yet, they believe their \textbf{own personal attitudes} are different from the norm.
+					\item Actual behavior: however, they go along with the norm because: 
+					\begin{itemize}
+						\item Desire to fit in with the group.
+						\item Each person thinks that they are \textbf{the only one who has conflict} between their \textbf{personal attitudes} and their \textbf{actual behavior}
+					\end{itemize}
+				\end{itemize}
+				\item Methods: 
+				\begin{itemize}
+					\item Survey
+					\item Sample of 175 female and 152 male undergrads at mid-sized southeastern public university.
+					\item Convenience sample (library; residence halls)
+				\end{itemize}
+				\item Results: 
+				\begin{itemize}
+					\item 77.7\% of women said they had hooked up
+					\item 84.2\% of men said they had hooked up
+					\item The results with regard to comfort level with hooking up? 
+					\item Same-sex peers: How did men and women rate their comfort levels (self-ratings) as compared to others of same sex (peer-ratings)?
+					\item Opposite-sex peers: How did men and women rate the comfort levels of the opposite sex? Did they over- or under-estimate comfort levels? 
+					\item Gender differences: What were the overall gender differences? 
+				\end{itemize}
+				\item Conclusions: 
+				\begin{itemize}
+					\item Findings support the theory of pluralistic ignorance:
+					\begin{itemize}
+						\item Hooking up has become a norm on college campuses
+						\item Most students think other people are comfortable with it - more comfortable than they are themselves. 
+					\end{itemize}
+					\item Potential consequences of gender differences: 
+					\begin{itemize}
+						\item Potential for sexual assault of women
+						\item Why? 
+					\end{itemize}
+				\end{itemize}
+				\item Critiques of the study? 
+			\end{enumerate}	
+		\end{eg}
+
+	\end{enumerate}	
+\end{enumerate}
+
+
+
+
+
+\subsection{The Case of Death: Culture, Social Structure, and Fear}
+
+\section{Individuals and Social Interaction}
+\subsection{Socialization: Development of the Self}
+\subsection{Deviance}
+
+\section{Groups and Society}
+\subsection{Social Class}
+\subsection{Race and Ethnicity}
+\subsection{Organizations}
+\subsection{The sociology of Work}
+
+\end{document}
+	
+	
