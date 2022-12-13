@@ -13,6 +13,6 @@
 * [Groups and Society](3.md)
     * [Social Class](3.1.md)
     * [Race and Ethnicity](3.2.md)
-    * [Organizations](3.3.md)
-    * [The sociology of Work](3.4.md)
+    * [Formal Organizations](3.3.md)
+    * [Gender and Work](3.4.md)
 
